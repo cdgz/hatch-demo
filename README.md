@@ -1,7 +1,7 @@
 Description
 -----------
 
-This is one of possible implementations of the challenge. Requirements to execute the code: Ansbile 2, boto and AWS credenials
+This is one of possible implementations of the challenge. Requirements to execute the code: Ansible 2, boto and AWS credentials
 
 Requirements:
 
