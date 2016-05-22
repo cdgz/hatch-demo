@@ -8,4 +8,4 @@ yum install -y apache-maven
 
 # build project
 
-mvn package
+cd /opt/hatch-demo && mvn package
