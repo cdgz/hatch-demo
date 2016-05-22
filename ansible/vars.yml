@@ -1,0 +1,7 @@
+aws_region: eu-west-1
+aws_image: ami-b0ac25c3 # Amazon AMI
+aws_instance_type: t2.micro
+aws_user: ec2-user
+aws_ssh_key: hatchdemo
+aws_num_nodes: 1
+aws_security_group_name: hatchdemo 

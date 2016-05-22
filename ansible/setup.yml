@@ -1,0 +1,25 @@
+- name: Setup Amazon AMI VM
+  hosts: localhost
+  vars_files:
+    - vars.yml
+  roles:
+    - create_ec2
+
+- hosts: hatchdemo_launched
+  sudo: yes
+  tasks:
+    - name: Install Docker
+      yum: name=docker state=latest
+
+    - name: Start Docker
+      service: name=docker state=started
+
+    - name: Install git
+      yum: name=git state=latest
+
+    - name: Clone repo, build and run
+      command: chdir=/opt {{ item }}
+      with_items:
+        - git clone https://github.com/cdugz/hatch-demo.git
+        - /opt/hatch-demo/build.sh
+        - /opt/hatch-demo/run.sh 
