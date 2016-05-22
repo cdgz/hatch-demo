@@ -3,12 +3,9 @@ Description
 
 This is one of possible implementations of the challenge. Requirements to execute the code: Ansible 2, boto and AWS credentials
 
-Requirements:
-
-    Ansible >= 2
-    python >= 2.6
-    boto
-    AWS credentials, exported in shell
+- Ansible >= 2 (python >= 2.6)
+- boto
+- AWS credentials, exported in shell
 
 Usage:
 
