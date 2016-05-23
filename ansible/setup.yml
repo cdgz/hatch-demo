@@ -25,5 +25,4 @@
         - /opt/hatch-demo/scripts/02-run
 
     - name: Test service
-      command: /opt/hatch-demo/scripts/03-test {{ item.public_ip }}
-      with_items: "{{ ec2.instances }}"
+      command: /opt/hatch-demo/scripts/03-test {{ var_pub_ip }}
