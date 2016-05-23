@@ -25,4 +25,4 @@
         - /opt/hatch-demo/scripts/02-run
 
     - name: Test service
-      command: /opt/hatch-demo/scripts/03-test {{ var_pub_ip }}
+      command: /opt/hatch-demo/scripts/03-test
