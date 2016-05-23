@@ -6,7 +6,7 @@
     - create_ec2
 
 - hosts: hatchdemo_launched
-  sudo: yes
+  become: yes
   tasks:
     - name: Install Docker
       yum: name=docker state=latest

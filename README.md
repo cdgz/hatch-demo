@@ -14,7 +14,5 @@ Usage:
     export AWS_SECRET_ACCESS_KEY=<aws_secret_access_key>
     cd ansible && ansible-playbook setup.yml
 
-The playbook spins up AWS EC2 instance (Amazon AMI), sets up all necessary parameters (key, security groups, etc.) and provisions it with all necessary libraries. On running EC2 instance, java code is built with maven and executed in docker container.
-
-Once ansible run is finished, user can query AWS instance on public IP at port 8080 to check functionality.
+The playbook spins up AWS EC2 instance (Amazon AMI), sets up all necessary parameters (key, security groups, etc.) and provisions it with all necessary libraries. On running EC2 instance, java code is built with maven and executed in docker container. In the end, automated test queries AWS instance on localhost at port 8080 to check functionality.
 
