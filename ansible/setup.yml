@@ -21,5 +21,5 @@
       command: chdir=/opt {{ item }}
       with_items:
         - git clone https://github.com/cdugz/hatch-demo.git
-        - /opt/hatch-demo/build.sh
-        - /opt/hatch-demo/run.sh 
+        - /opt/hatch-demo/scripts/01-build
+        - /opt/hatch-demo/scripts/02-run
